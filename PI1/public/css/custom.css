@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #204051;  /* Azul oscuro */
+    --secondary-color: #3b6978; /* Azul medio */
+    --accent-color: #84a9ac;    /* Azul claro */
+    --background-color: #cae8d5; /* Verde suave */
+    --highlight-color: #f4f9f4; /* Blanco neutro */
+
+    /* Color del logo */
+    --navbar-footer-background-color: #D3E4E6; /* Reemplaza este valor con el hexadecimal obtenido */
+    --highlight-color: #204051; 
+
+}
+.navbar-custom {
+    background-color: var(--navbar-footer-background-color);
+}
+/* Barra de navegación fija */
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Hace que esté sobre los demás elementos */
+    background-color: var(--navbar-footer-background-color); /* Asegúrate de que mantenga el color de fondo */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Añade una pequeña sombra para que se vea más prominente */
+}
+
+/* Compensación del espacio de la barra de navegación */
+body {
+    padding-top: 80px; /* Ajusta según la altura de la barra de navegación */
+}
+
+.navbar-custom .nav-link, .navbar-custom .navbar-brand {
+    color: var(--highlight-color) !important;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Botón de llamada a la acción */
+.btn-action {
+    background-color: var(--accent-color);
+    color: var(--highlight-color);
+}
+
+/* Estilos del Pie de Página */
+.footer-custom {
+    background-color: var(--navbar-footer-background-color);
+    color: var(--highlight-color);
+    padding: 20px 0;
+}
+
+.footer-logo {
+    max-width: 150px; /* Ajusta según el tamaño del logo */
+}
+
+.footer-social-icons {
+    margin-top: 15px;
+}
+
+.footer-social-icons .social-icon {
+    margin-right: 10px;
+    color: var(--highlight-color);
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.footer-social-icons .social-icon:hover {
+    color: var(--highlight-color);
+}
+
+.contact-link {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+     /* Estilo para fijar la barra de navegación en la parte superior */
+     .navbar-fixed-top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1030; /* Hace que esté sobre los demás elementos */
+    }
+
+    /* Para evitar que el contenido principal quede cubierto por la barra de navegación */
+    body {
+        padding-top: 80px; /* Ajusta según la altura de la barra de navegación */
+    }
+
+    /* Imagen a lo ancho de la página */
+    .header-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
