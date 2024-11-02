@@ -12,29 +12,23 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-custom navbar-fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Mental Balance</a>
+        <a class="navbar-brand" href="/">Mental Balance</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
+                    <a class="nav-link" href="/servicios">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Psiquiatras</a>
+                    <a class="nav-link" href="/tratamiento">Qué tratamos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Psicólogos</a>
+                    <a class="nav-link" href="/registroM">Regístrate como médico</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Qué tratamos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tarifas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="/registroP">Regístrate como paciente</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-action" href="#">PIDE CITA</a>

@@ -16,7 +16,7 @@
 /* Barra de navegación fija */
 .navbar-fixed-top {
     position: fixed;
-    top: 0;
+    top: 10%;
     width: 100%;
     z-index: 1030; /* Hace que esté sobre los demás elementos */
     background-color: var(--navbar-footer-background-color); /* Asegúrate de que mantenga el color de fondo */

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Inicio')
 @section('content')
+
     <!-- Imagen a lo ancho de la página -->
     <img src="{{ asset('images/image.png') }}" alt="Mental Balance Building" class="header-image">
     <!-- Sección de Bienvenida -->

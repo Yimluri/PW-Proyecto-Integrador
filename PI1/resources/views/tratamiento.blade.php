@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Qué tratamos?</title>
-</head>
-<body>
-    <header>
-        <h1>Project Mental Balance</h1>
-        <nav>
-            <!--AQUI PONES EL NAV EEEEE QUE NO SE TE OLVIDE XDD-->
-        </nav>
-    </header>
+@extends('layouts.app')
+@section('title', 'Inicio')
+@section('content')
 
     <main>
             <h2>¿Qué tratamos?</h2>
@@ -31,5 +19,4 @@
         </section>
     </main>
 
-</body>
-</html>
+@endsection
