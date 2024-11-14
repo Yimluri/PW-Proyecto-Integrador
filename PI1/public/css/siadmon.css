@@ -1,0 +1,78 @@
+/* siadmon.css */
+:root {
+    --primary-color: #3b6978;  
+    --secondary-color: #84a9ac; 
+    --accent-color: #cae8d5;    
+    --background-color: #f4f9f4; 
+    --highlight-color: #204051; 
+
+    --navbar-footer-background-color: #D3E4E6; 
+    --highlight-color: #204051; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+.login-page {
+    background: linear-gradient(rgba(59, 105, 120, 0.8), rgba(59, 105, 120, 0.8)), url('');
+    background-size: cover;
+    color: var(--highlight-color);
+}
+
+.login-container {
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-section {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.system-title {
+    font-size: 1.5rem;
+    color: var(--highlight-color);
+}
+
+.login-form .form-label {
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+.btn-login {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-reset {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-login:hover, .btn-reset:hover {
+    background-color: var(--secondary-color);
+}
+
+.navbar-custom {
+    background-color: var(--navbar-footer-background-color);
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    z-index: 1030; 
+    background-color: var(--navbar-footer-background-color); 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}

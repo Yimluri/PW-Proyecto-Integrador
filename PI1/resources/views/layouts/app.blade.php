@@ -59,10 +59,10 @@
                 <!-- Información de contacto -->
                 <div class="col-md-4 mb-3">
                     <h6>Contacto</h6>
-                    <p>C/ Máiquez, 36 - 1º D</p>
-                    <p>28009 Madrid, España</p>
-                    <p>Tel.: <a href="tel:+34918266366" class="contact-link">+34 918 266 366</a></p>
-                    <p>WhatsApp: <a href="https://wa.me/34644641401" class="contact-link">+34 644 641 401</a></p>
+                    <p>Mental Balance 251 Los Mental</p>
+                    <p>Queretaro, Mexico</p>
+                    <p>Tel.: <a href="tel:+442783655" class="contact-link">+4427836555</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/4427836555" class="contact-link">+4427836555</a></p>
                 </div>
                 <!-- Horarios de atención -->
                 <div class="col-md-4 mb-3">

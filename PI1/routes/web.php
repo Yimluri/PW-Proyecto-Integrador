@@ -1,19 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ControladorVistas;
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/tratamiento', function () {
-    return view('tratamiento');
-});
-Route::get('/servicios', function () {
-    return view('servicios');
-});
-Route::get('/registroP', function () {
-    return view('registroPaciente');
-});
-Route::get('/registroM', function () {
-    return view('registroMedico');
-});
+//registro de las vistas a pasar por el controlador
+
+Route::get('/', [ControladorVistas::class, 'home']);
+Route::get('/tratamiento', [ControladorVistas::class, 'tratamiento']);
+Route::get('/servicios', [ControladorVistas::class, 'servicios']);
+Route::get('/registroP', [ControladorVistas::class, 'registroPaciente']);
+Route::get('/registroM', [ControladorVistas::class, 'registroMedico']);
+Route::get('/administrador', [controladorVistas::class, 'siadmon']);

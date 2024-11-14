@@ -1,31 +1,30 @@
 :root {
-    --primary-color: #204051;  /* Azul oscuro */
-    --secondary-color: #3b6978; /* Azul medio */
-    --accent-color: #84a9ac;    /* Azul claro */
-    --background-color: #cae8d5; /* Verde suave */
-    --highlight-color: #f4f9f4; /* Blanco neutro */
+    --primary-color: #204051;  
+    --secondary-color: #3b6978; 
+    --accent-color: #84a9ac;    
+    --background-color: #cae8d5; 
+    --highlight-color: #f4f9f4; 
 
-    /* Color del logo */
-    --navbar-footer-background-color: #D3E4E6; /* Reemplaza este valor con el hexadecimal obtenido */
+    --navbar-footer-background-color: #D3E4E6; 
     --highlight-color: #204051; 
 
 }
 .navbar-custom {
     background-color: var(--navbar-footer-background-color);
 }
-/* Barra de navegación fija */
+
 .navbar-fixed-top {
     position: fixed;
     top: 10%;
     width: 100%;
-    z-index: 1030; /* Hace que esté sobre los demás elementos */
-    background-color: var(--navbar-footer-background-color); /* Asegúrate de que mantenga el color de fondo */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Añade una pequeña sombra para que se vea más prominente */
+    z-index: 1030; 
+    background-color: var(--navbar-footer-background-color); 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-/* Compensación del espacio de la barra de navegación */
+
 body {
-    padding-top: 80px; /* Ajusta según la altura de la barra de navegación */
+    padding-top: 80px; 
 }
 
 .navbar-custom .nav-link, .navbar-custom .navbar-brand {
@@ -36,13 +35,13 @@ body {
     color: var(--accent-color) !important;
 }
 
-/* Botón de llamada a la acción */
+
 .btn-action {
     background-color: var(--accent-color);
     color: var(--highlight-color);
 }
 
-/* Estilos del Pie de Página */
+
 .footer-custom {
     background-color: var(--navbar-footer-background-color);
     color: var(--highlight-color);
@@ -50,7 +49,7 @@ body {
 }
 
 .footer-logo {
-    max-width: 150px; /* Ajusta según el tamaño del logo */
+    max-width: 150px; 
 }
 
 .footer-social-icons {
@@ -77,20 +76,19 @@ body {
     text-decoration: underline;
 }
 
-     /* Estilo para fijar la barra de navegación en la parte superior */
+
      .navbar-fixed-top {
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 1030; /* Hace que esté sobre los demás elementos */
+        z-index: 1030; 
     }
 
-    /* Para evitar que el contenido principal quede cubierto por la barra de navegación */
+    
     body {
-        padding-top: 80px; /* Ajusta según la altura de la barra de navegación */
+        padding-top: 80px; 
     }
 
-    /* Imagen a lo ancho de la página */
     .header-image {
         width: 100%;
         height: auto;
