@@ -15,3 +15,6 @@ Route::get('/registroM', [ControladorVistas::class, 'registroMedico']);
 Route::get('/administrador', [AdministradorController::class, 'showLoginForm'])->name('administrador.login.form'); 
 Route::post('/administrador/login', [AdministradorController::class, 'login'])->name('administrador.login'); 
 Route::get('/dashboardadmon', [AdministradorController::class, 'dashboard'])->name('administrador.dashboard'); 
+Route::post('/administrador/logout', [AdministradorController::class, 'logout'])->name('administrador.logout');
+Route::get('/administrador/pacientes', [AdministradorController::class, 'pacientes'])->name('pacientes');
+Route::get('/administrador/pacientes/buscar', [AdministradorController::class, 'buscarPacientes'])->name('pacientes.buscar');
