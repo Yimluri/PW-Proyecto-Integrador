@@ -30,8 +30,14 @@ class ControladorVistas extends Controller
     {
         return view('registroMedico');
     }
+    
     public function siadmon()
     {
         return view('siadmon');
+    }
+
+    public function dashboardAdmon()
+    {
+        return view('dashboardadmon');
     }
 }
