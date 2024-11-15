@@ -138,23 +138,3 @@ input.form-control:focus {
 }
 
 
-.footer-section {
-    background-color: var(--primary-color);
-    padding: 5px 0;
-    text-align: center;
-    color: #ffffff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 0.8rem;
-}
-
-.footer-section a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.footer-section a:hover {
-    text-decoration: underline;
-}

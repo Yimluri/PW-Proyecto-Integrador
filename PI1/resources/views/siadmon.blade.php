@@ -20,41 +20,26 @@
             <img src="{{ asset('img/logo.jpg') }}" alt="Mental Balance" class="logo">
         </div>
         <div class="col-9 form-section">
-        <form action="{{ route('administrador.login') }}" method="POST">
+        <form method="POST" action="{{ route('administrador.login') }}">
     @csrf
-
     <div class="mb-2">
         <label for="usuario" class="form-label">Usuario:</label>
-        <input type="text" class="form-control" id="usuario" name="usuario" value="{{ old('usuario') }}">
+        <input type="text" class="form-control @error('usuario') is-invalid @enderror" id="usuario" name="usuario" value="{{ old('usuario') }}">
         @error('usuario')
-        <small class="text-danger">{{ $message }}</small>
+            <div class="invalid-feedback">{{ $message }}</div>
         @enderror
     </div>
-
     <div class="mb-2">
         <label for="contrasena" class="form-label">Contraseña:</label>
-        <input type="password" class="form-control" id="contrasena" name="contrasena">
+        <input type="password" class="form-control @error('contrasena') is-invalid @enderror" id="contrasena" name="contrasena">
         @error('contrasena')
-        <small class="text-danger">{{ $message }}</small>
+            <div class="invalid-feedback">{{ $message }}</div>
         @enderror
     </div>
-
     <div class="button-section d-flex justify-content-start mt-1">
         <button type="submit" class="btn btn-link btn-login me-2">Entrar</button>
         <button type="button" class="btn btn-link btn-reset">Cambiar Contraseña</button>
     </div>
-
-    @if ($errors->any())
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        Swal.fire({
-            icon: 'error',
-            title: 'Error de autenticación',
-            text: '{{ $errors->first() }}',
-        });
-    </script>
-@endif
-
 </form>
 
         </div>
