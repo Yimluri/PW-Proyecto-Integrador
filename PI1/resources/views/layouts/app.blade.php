@@ -47,7 +47,7 @@
             <div class="row">
                 <!-- Logo y redes sociales -->
                 <div class="col-md-4 mb-3">
-                    <img src="{{ asset('images/logo.jpg') }}" alt="Mental Balance Logo" class="footer-logo mb-3">
+                    <img src="{{ asset('img/logo.jpg') }}" alt="Mental Balance Logo" class="footer-logo mb-3">
                     <p>PSIQUIATRÍA y PSICOLOGÍA</p>
                     <div class="footer-social-icons">
                         <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>

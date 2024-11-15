@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- Imagen a lo ancho de la página -->
-    <img src="{{ asset('images/image.png') }}" alt="Mental Balance Building" class="header-image">
+    <img src="{{ asset('img/image.png') }}" alt="Mental Balance Building" class="header-image">
     <!-- Sección de Bienvenida -->
     <div class="jumbotron text-center" style="background-color: var(--background-color);">
         <h1 class="display-4">Bienvenidos a Mental Balance</h1>
