@@ -14,10 +14,11 @@ return new class extends Migration
         Schema::create('administradores', function (Blueprint $table) {
             $table->id();
             $table->string('nombre')->unique();
-            $table->string('contrasena'); 
+            $table->string('contrasena');
+            $table->string('nombres');     
+            $table->string('apellidos');    
             $table->timestamps();
         });
-        
     }
 
     /**

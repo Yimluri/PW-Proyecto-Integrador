@@ -2,18 +2,18 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Administrador extends Authenticatable
 {
-    use HasFactory;
 
     protected $table = 'administradores'; 
 
     protected $fillable = [
         'nombre',
         'contrasena',
+        'nombres',     
+        'apellidos',   
     ];
 
     protected $hidden = [
@@ -22,6 +22,6 @@ class Administrador extends Authenticatable
 
     public function setContrasenaAttribute($value)
     {
-        $this->attributes['contrasena'] = bcrypt($value);
+        $this->attributes['contrasena'] = ($value);
     }
 }

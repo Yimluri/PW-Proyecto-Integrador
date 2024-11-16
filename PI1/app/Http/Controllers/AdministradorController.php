@@ -16,16 +16,14 @@ class AdministradorController extends Controller
 
     public function login(LoginAdministradorRequest $request)
     {
-        // Intentar autenticar al administrador
         $administrador = Administrador::where('nombre', $request->usuario)->first();
 
-        // Comparar la contraseña sin hash
         if ($administrador && $administrador->contrasena === $request->contrasena) {
-            // Autenticar al administrador manualmente sin recordar token
+   
             Auth::guard('web')->setUser($administrador);
             session(['admin_authenticated' => true]);
             
-            // Redirigir al dashboard del administrador
+           
             return redirect()->route('administrador.dashboard');
         }
 
@@ -36,7 +34,7 @@ class AdministradorController extends Controller
 
     public function dashboard()
     {
-        // Verificar si el administrador está autenticado
+        
         if (!session('admin_authenticated')) {
             return redirect()->route('administrador.login.form');
         }
