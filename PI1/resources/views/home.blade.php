@@ -29,7 +29,7 @@
         </div>
     </div>
 
-    <!-- Hola jimena ya estoy en el repo  -->
+    <!-- Hola jimena ya estoy en el repo solo esperando a los demas  -->
     <!-- Sección de Llamada a la Acción -->
     <div class="text-center my-5">
         <p>¿Interesado en saber más?</p>
